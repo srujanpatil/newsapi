@@ -41,7 +41,7 @@ Start API at http://127.0.0.1:5000
 
 ---
 ## News Scrapper
-The news scrapper polls this [rss feed](/https://www.theguardian.com/au/rss) to find the latest news.
+The news scrapper polls this [rss feed](https://www.theguardian.com/au/rss) to find the latest news.
 
 ```
 (env) $ python3 api/scrapper.py
