@@ -4,11 +4,12 @@
 
 ## Setup
 ```
-# Setup a virtual environment
-$ python3 -m venv env
-
 # clone repo
 $ git clone https://github.com/srujanpatil/newsapi.git
+$ cd newsapi
+
+# Setup a virtual environment
+$ python3 -m venv env
 
 # Activate env
 $ source env/bin/activate
