@@ -17,6 +17,8 @@ $ source env/bin/activate
 # Install requirements
 (env) $ pip install -r requirements.txt
 ```
+You will also need a MongoDB database to connect to. I had used a MongoDB instance on [MongoDB Atlas](https://www.mongodb.com/atlas/database) so you can either use that, or connect to your own instance.
+
 Add conifg file to root (newsapi/config.json)
 ```
 {   
@@ -30,7 +32,7 @@ Add conifg file to root (newsapi/config.json)
 ```
 - The "rss" list contains valid theguardian.com rss urls.
 - The "Paginate" parameter determines the length of the page. Example, here it's 5, so each page will contain max of 5 articles.
-
+- Note here the "mongodb+srv" protocol is used to connect to the DB. You can find the above DB params in the [connection string](https://docs.mongodb.com/manual/reference/connection-string/). If you want connect by any other means, you can tweak [this](https://github.com/srujanpatil/newsapi/blob/6635dd2d1839e9afae019ff33141afcbe427c6cf/api/db_utils.py#L10).
 ---
 ## API
 You can view the API docs at the homepage ('/') or [here](docs.md).
